@@ -8,7 +8,11 @@ return (<div className="navbar container">
         <a href="#!">Designs</a>
         <a href="#!">Settings</a>
     </div>
-    <div className="navbar-btn"></div>
+    <div className="sidebar-btn">
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+    </div>
     </div>)
 }
 
