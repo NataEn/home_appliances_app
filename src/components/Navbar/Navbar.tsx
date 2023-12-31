@@ -2,12 +2,13 @@ import React, { FC } from "react";
 
 const Navbar: FC =() => {
 return (<div className="navbar container">
-    <a href="#!"> Home Appliances Hub</a>
+    <a href="#!" className="logo"> Home Appliances Hub</a>
     <div className="nav-links">
-        <a href="#!">Home</a>
+        <a href="#!" className="active">Home</a>
         <a href="#!">Designs</a>
         <a href="#!">Settings</a>
     </div>
+    <div className="navbar-btn"></div>
     </div>)
 }
 
