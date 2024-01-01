@@ -1,3 +1,6 @@
+@function getAnimationDuration($duration: number){
+    @return calc($duration * var(--animation-speed));
+}
 .navbar{
     height: 55px;
     box-shadow: 0 3px 6px var(--shadow-color);
@@ -31,7 +34,7 @@
                 bottom: -5px;
                 left: 0;
                 transform: scaleX(0);
-                transition:transform calc(var(--animation-speed)*0.2s) ease-in-out;
+                transition:transform getAnimationDuration(.2s) ease-in-out;
             }
             &:hover{
                 &::before{
@@ -45,6 +48,7 @@
         }
     }
 
+
     .sidebar-btn{
         height: 24px;
         width: 30px;
@@ -55,6 +59,7 @@
             width: 100%;
             background-color: var(--text-color);
             position: absolute;
+            transition: transform (getAnimationDuration(0.5s));
 
             &:nth-child(1){
                 top:0;
@@ -68,6 +73,26 @@
                 top:100%;
                 transform-origin: right;
                 transform: scaleX(1.2) translateY(-100%);
+            }
+        }
+
+        &.active{
+            .bar{
+                transform-origin: center;
+                top:50%;
+
+                &:nth-child(1){
+                    transform: scale(1) translate(0,-50%) rotate(45deg);
+                }
+                &:nth-child(2){
+                    top:50%;
+                    transform-origin: right;
+                    transform: scaleX(0);
+                }
+                &:nth-child(3){
+                    transform: scale(1) translate(0,-50%) rotate(-45deg);
+                }
+    
             }
         }
     }
