@@ -1,13 +1,16 @@
-import React, { FC } from "react";
+import React, { FC} from "react";
+import SidebarBtn from "../SidebarBtn/SidebarBtn"
+
 
 const Navbar: FC =() => {
 return (<div className="navbar container">
-    <a href="#!"> Home Appliances Hub</a>
+    <a href="#!" className="logo"> Home Appliances Hub</a>
     <div className="nav-links">
-        <a href="#!">Home</a>
+        <a href="#!" className="active">Home</a>
         <a href="#!">Designs</a>
         <a href="#!">Settings</a>
     </div>
+    <SidebarBtn/>
     </div>)
 }
 

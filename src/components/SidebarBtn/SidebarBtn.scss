@@ -1,0 +1,57 @@
+.sidebar-btn{
+    height: 24px;
+    width: 30px;
+    position: relative;
+    display: none;
+    .bar{
+        border-radius: 5px;
+        height:5px;
+        width: 100%;
+        background-color: var(--text-color);
+        position: absolute;
+        transition: transform (getAnimationDuration(0.5s));
+
+        &:nth-child(1){
+            top:0;
+        }
+        &:nth-child(2){
+            top:50%;
+            transform-origin: right;
+            transform: scaleX(.8) translateY(-50%);
+        }
+        &:nth-child(3){
+            top:100%;
+            transform-origin: right;
+            transform: scaleX(1.2) translateY(-100%);
+        }
+    }
+
+    &.active{
+        .bar{
+            transform-origin: center;
+            top:50%;
+
+            &:nth-child(1){
+                transform: scale(1) translate(0,-50%) rotate(45deg);
+            }
+            &:nth-child(2){
+                top:50%;
+                transform-origin: right;
+                transform: scaleX(0);
+            }
+            &:nth-child(3){
+                transform: scale(1) translate(0,-50%) rotate(-45deg);
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+.navbar{
+    .sidebar-btn{
+        display: block;
+    }
+}
+
+}
