@@ -1,0 +1,9 @@
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vw;
+    width: 260px;
+    background-color: var(--background-color);
+    box-shadow: 0 0 0 getOverlayLength(260px) var(--overlay-color), 3px 0 5px var(--shadow-color);
+}
