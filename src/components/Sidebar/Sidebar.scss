@@ -6,4 +6,21 @@
     width: 260px;
     background-color: var(--background-color);
     box-shadow: 0 0 0 getOverlayLength(260px) var(--overlay-color), 3px 0 5px var(--shadow-color);
+
+    .nav-links{
+        .sidebar-link{
+            display: block;
+            padding: .5em 1em;
+            border-left: 0.4em solid transparent;
+            color: var(--text-color);
+            &.active{
+                border-left-color: var(--primary-color);
+            }
+            &:hover{
+                border-left-color: var(--primary-color);
+                background-color: var(--background-shadow-color);
+            }
+
+        }
+    }
 }
