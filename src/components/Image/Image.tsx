@@ -1,7 +1,14 @@
 import React, { FC } from 'react'
 
-const Image: FC = () => {
-        return <div className='Image'>
+interface ImageProps{
+    src: string;
+    pt: string;
+    title: string;
+}
+
+const Image: FC<ImageProps> = ({src, pt, title}) => {
+        return <div className='image' style={{paddingTop:pt}}>
+            {title}
             </div>    
 }
 

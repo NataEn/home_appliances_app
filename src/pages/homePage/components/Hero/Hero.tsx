@@ -1,4 +1,6 @@
 import React, { FC } from 'react'
+import Image from "../../../../components/Image/Image"
+import {ImageList} from "./mockData"
 
 const Hero :FC=()=>{
     return <div className='hero'>
@@ -10,7 +12,12 @@ const Hero :FC=()=>{
             incididunt ut duis aute irure.</p>
             <button className='btn'>explore now</button>
         </div>
-        <div className='col'>col2</div>
+        <div className='col gallery'>
+            {ImageList.map((img=>(
+
+            <Image src={img.src} pt={"85%"} title={img.name}/>
+            )))}
+        </div>
 
         </section>
     </div>

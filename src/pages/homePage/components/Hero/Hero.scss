@@ -20,5 +20,11 @@
             line-height: 1.3em;
             margin-bottom: 1.25em;
         }
+
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap:1.75vw;
+        }
     }
 }
