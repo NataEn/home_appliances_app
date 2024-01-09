@@ -1,0 +1,24 @@
+.hero{
+    section{
+        display: flex;
+        align-items: center;
+
+        .col{
+            width: 50%;
+        }
+
+        .title{
+            color: var(--text-color);
+            font-size: 3em;
+            margin-bottom: .25em;
+        }
+
+        .info{
+            color:var(--text-light);
+            font-size: 1em;
+            letter-spacing: .1em;
+            line-height: 1.3em;
+            margin-bottom: 1.25em;
+        }
+    }
+}

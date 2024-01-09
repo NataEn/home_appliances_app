@@ -15,20 +15,12 @@
             color: var(--text-color);
             transform: translateX(-100%);
             animation: getAnimationDuration(.3s) slideInLeft forwards;
-            @for $i from 1 through 3{
+            @for $i from 1 through 3 {
                 &:nth-child(#{$i}){
                     animation-delay: #{$i * .2}s;
                 }
             };
-            @for $i from 1 through 4 {
-                &:nth-child(#{$i}) {
-                  list-style: none;
-                  &:before{
-                    content: $i;
-                  }
-                  color: desaturate($base-color, $i*15);
-                }
-              }
+  
 
             &.active{
                 border-left-color: var(--primary-color);

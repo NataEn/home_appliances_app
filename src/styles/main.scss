@@ -13,6 +13,23 @@ a{
     text-decoration: none;
 }
 
+.btn{
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    padding: .75em 1em;
+    text-transform: uppercase;
+    font-size: var(--font-size-btn); 
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px var(--shadow-color);
+    &:hover{
+        box-shadow: 0 1px 3px var(--shadow-color);
+    }
+}
+
 .container{
     padding-inline: 15vw;
 }
