@@ -19,7 +19,7 @@ const Navbar: FC = () => {
     return (
         <>
             <div className="navbar container">
-                <a href="#!" className="logo"> Home Appliances Hub</a>
+                <a href="#!" className="logo"> Home Design Hub</a>
                 <div className="nav-links">
                     {navlinks.map((link: NavlinkElement )=>< Navlink name={link.name} path={link.path} value={link.value} key={link.name}/>)}
                 </div>

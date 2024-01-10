@@ -1,4 +1,4 @@
-# Home Appliances App
+# Home Design App
 
 ## Web Technologies:
 - React
