@@ -1,14 +1,14 @@
 import React, { FC } from 'react'
 
 interface ImageProps{
-    src: string;
+    imgSrc: string;
     pt: string;
     title: string;
 }
 
-const Image: FC<ImageProps> = ({src, pt, title}) => {
+const Image: FC<ImageProps> = ({imgSrc, pt, title}) => {
         return <div className='image' style={{paddingTop:pt}}>
-            {title}
+            <img src={process.env.PUBLIC_URL +imgSrc} alt={title}/>
             </div>    
 }
 

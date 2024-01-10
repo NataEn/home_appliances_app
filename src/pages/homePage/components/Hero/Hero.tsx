@@ -14,11 +14,9 @@ const Hero :FC=()=>{
         </div>
         <div className='col gallery'>
             {ImageList.map((img=>(
-
-            <Image src={img.src} pt={"85%"} title={img.name}/>
+            <Image imgSrc={process.env.PUBLIC_URL + img.src} pt={"85%"} title={img.name} key={img.name}/>
             )))}
         </div>
-
         </section>
     </div>
 }
