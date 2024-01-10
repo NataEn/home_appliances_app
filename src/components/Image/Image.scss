@@ -4,6 +4,8 @@
     position: relative;
 
     img{
+        overflow: hidden;
+        border-radius: var(--border-radius);
         position: absolute;
         top:0;
         left:0;

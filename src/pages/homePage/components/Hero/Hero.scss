@@ -30,7 +30,7 @@
                 transform: scale(0);
                 opacity:0;
                 animation: getAnimationDuration(.3s) popOut forwards;
-                // make a spiral function
+                // TODO make a spiral function
                     &:nth-child(2) {
                         animation-delay: .1s;
                     }

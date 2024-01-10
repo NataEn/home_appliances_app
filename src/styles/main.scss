@@ -29,7 +29,10 @@ a{
         box-shadow: 0 1px 3px var(--shadow-color);
     }
 }
-
+.col {
+    width: 100%;
+    margin: 1em;
+}
 .container{
     padding-inline: 15vw;
 }
