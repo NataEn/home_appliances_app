@@ -60,7 +60,7 @@ section {
 }
 .col {
     width: 100%;
-    margin: 1em;
+    margin: 2em;
     overflow: hidden;
 
 }
@@ -68,6 +68,6 @@ section {
     padding-inline: 12vw;
 }
 .main{
+    display: block;
     padding-block: 3vw;
-    height: 90vh;
 }

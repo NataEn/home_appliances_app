@@ -9,7 +9,7 @@ const Hero :FC=():JSX.Element=>{
             <h1 className='title'>What Are We About</h1>
             <p className='info'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            incididunt ut duis aute irure.</p>
+            incididunt ut duis aute irure. Ut enim ad incididunt ut.</p>
             <button className='btn'>explore now</button>
         </div>
         <div className='col gallery'>
