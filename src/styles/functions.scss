@@ -1,3 +1,7 @@
 @function getAnimationDuration($duration: number){
     @return calc($duration * var(--animation-speed));
 }
+
+@function getOverlayLength($elementWidth: number){
+    @return calc(100vw - $elementWidth);
+}

@@ -1,16 +1,16 @@
 
 import React from 'react';
 import Navbar from './components/Navbar/Navbar';
+import Home from './pages/homePage/Home/Home'
+
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
-      <header className="App-header">
-        <p>
-          This is my Home Appliances App
-        </p>
-      </header>
+      <div className='container main'>
+      <Home/>
+      </div>
     </div>
   );
 }

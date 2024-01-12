@@ -1,3 +1,7 @@
+html{
+    height: 100vh;
+}
+
 *{
     padding:0;
     margin:0;
@@ -13,6 +17,57 @@ a{
     text-decoration: none;
 }
 
+section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vw;
+    height:27rem;
+    .col {
+        width: 50%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        overflow: hidden;
+        margin-bottom: 3vw;
+    }
+
+    .title {
+        color: var(--text-color);
+        font-size: 2.5em;
+        margin-bottom: .25em;
+        font-weight: 900;
+    }
+
+}
+
+.btn{
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    padding: .75em 1em;
+    text-transform: uppercase;
+    font-size: var(--font-size-btn); 
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px var(--shadow-color);
+    &:hover{
+        box-shadow: 0 1px 3px var(--shadow-color);
+    }
+}
+.col {
+    width: 100%;
+    margin: 2em;
+    overflow: hidden;
+
+}
 .container{
-    padding-inline: 15vw;
+    padding-inline: 12vw;
+}
+.main{
+    display: block;
+    padding-block: 3vw;
 }

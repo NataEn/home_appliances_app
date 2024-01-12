@@ -1,6 +1,15 @@
+@import "./styles/animations.scss";
 @import "./styles/functions.scss";
 @import "./styles/main.scss";
 @import "./styles/theme/variables.scss";
 @import "./components/Navbar/Navbar.scss";
 @import "./components/SideBar/SideBar.scss";
 @import "./components/SidebarBtn/SidebarBtn.scss";
+@import "./components/Navlink/Navlink.scss";
+@import "./components/Image/Image.scss";
+@import "./pages/homePage/Home/Home.scss";
+@import "./pages/homePage/components/Hero/Hero.scss";
+@import "./pages/homePage/components/ImproveSkills/ImproveSkills.scss";
+@import "./pages/homePage/components/Quote/Quote.scss";
+
+

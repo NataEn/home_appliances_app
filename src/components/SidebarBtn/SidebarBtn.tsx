@@ -1,9 +1,20 @@
-import React, { FC, useState } from "react";
+import React, { FC, JSX } from "react";
 
 
-const SidebarBtn: FC =() => {
-    const [showSideBar, setShowSideBar]=useState(false)
-return (<div onClick={()=> setShowSideBar(!showSideBar)} className={`sidebar-btn ${showSideBar && 'active'}`}>
+export interface SidebarBtnProps {
+    showSideBar: boolean;
+    setShowSideBar: Function;
+}
+
+
+
+const SidebarBtn:FC<SidebarBtnProps> = ({showSideBar, setShowSideBar}): JSX.Element => {
+
+    const openSideBar=(): void => {
+        setShowSideBar(!showSideBar)
+    }
+
+    return (<div onClick={openSideBar} className={`sidebar-btn ${showSideBar && 'active'}`}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>

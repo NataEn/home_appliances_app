@@ -1,0 +1,35 @@
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vw;
+    width: 260px;
+    background-color: var(--background-color);
+    box-shadow: 0 0 0 getOverlayLength(260px) var(--overlay-color), 3px 0 5px var(--shadow-color);
+    animation: getAnimationDuration(.3s) slideInLeft;
+    .nav-links{
+        .sidebar-link{
+            display: block;
+            padding: .5em 1em;
+            border-left: 0.4em solid transparent;
+            color: var(--text-color);
+            transform: translateX(-100%);
+            animation: getAnimationDuration(.3s) slideInLeft forwards;
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}){
+                    animation-delay: #{$i * .2}s;
+                }
+            };
+  
+
+            &.active{
+                border-left-color: var(--primary-color);
+            }
+            &:hover{
+                border-left-color: var(--primary-color);
+                background-color: var(--background-shadow-color);
+            }
+
+        }
+    }
+}

@@ -1,10 +1,15 @@
 :root{
     --background-color:#fff ;
     --background-light:#fff ;
-    --shadow-color:rgba(0,0,0,0.2);
+    --shadow-color:rgba(0, 0, 0, 0.2);
+    --overlay-color:rgba(0,0,0,0.2);
+    --background-shadow-color: rgba(0,0,0,0.05);
     --primary-color:rgba(255,0,86);
     --text-color:#0A0A0A;
     --text-light:#575757;
+    --text-white: #fff;
     --font-size:16px;
+    --font-size-btn:1.1em;
     --animation-speed:1;
+    --border-radius: 3px;
 }

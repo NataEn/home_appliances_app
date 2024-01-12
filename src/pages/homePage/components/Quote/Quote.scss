@@ -1,0 +1,25 @@
+.quote {
+    section {
+        height: max-content;
+        flex-direction: column;
+
+        .quote-text {
+            font-size: 1.3em;
+            line-height: 1.3;
+            color: var(text-color);
+
+            svg{
+                color: var(--primary-color);
+                font-size: 1.5em;
+                margin-right: .5em;
+            }
+        }
+
+        .quote-author {
+            align-self: flex-end;
+            color: var(--text-light);
+            margin-top: 1em;
+        }
+    }
+
+}
