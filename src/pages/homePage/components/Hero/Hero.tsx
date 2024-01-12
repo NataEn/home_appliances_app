@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import Image from "../../../../components/Image/Image"
 import {ImageList} from "./mockData"
 
-const Hero :FC=()=>{
+const Hero :FC=():JSX.Element=>{
     return <div className='hero'>
         <section>
         <div className='col'>
@@ -14,7 +14,7 @@ const Hero :FC=()=>{
         </div>
         <div className='col gallery'>
             {ImageList.map((img=>(
-            <Image imgSrc={process.env.PUBLIC_URL + img.src} pt={"90%"} title={img.name} key={img.name}/>
+            <Image imgSrc={process.env.PUBLIC_URL + img.src} title={img.name} key={img.name}/>
             )))}
         </div>
         </section>

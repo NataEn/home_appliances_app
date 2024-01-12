@@ -1,10 +1,12 @@
 .image{
-    height: 0;
+    height: 100%;
     width: 100%;
     position: relative;
+    display: block;
+    overflow: hidden;
 
     img{
-        overflow: hidden;
+        display: block;
         border-radius: var(--border-radius);
         position: absolute;
         top:0;

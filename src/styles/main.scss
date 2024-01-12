@@ -1,5 +1,5 @@
 html{
-    height: 100vw;
+    height: 100vh;
 }
 
 *{
@@ -21,9 +21,16 @@ section {
     display: flex;
     align-items: center;
     margin-bottom: 3vw;
+    height:27rem;
     .col {
         width: 50%;
         height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        overflow: hidden;
+        margin-bottom: 3vw;
     }
 
     .title {
@@ -54,10 +61,13 @@ section {
 .col {
     width: 100%;
     margin: 1em;
+    overflow: hidden;
+
 }
 .container{
     padding-inline: 12vw;
 }
 .main{
     padding-block: 3vw;
+    height: 90vh;
 }

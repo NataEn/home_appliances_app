@@ -1,11 +1,13 @@
 .hero {
+    height:15wv;
     section {
         .info {
             color: var(--text-light);
-            font-size: 1em;
+            font-size: 2em;
             letter-spacing: .1em;
             line-height: 1.3em;
             margin-bottom: 1.25em;
+            flex-grow: 1;
         }
 
         .gallery {

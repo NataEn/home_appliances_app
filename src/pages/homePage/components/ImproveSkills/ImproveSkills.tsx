@@ -6,12 +6,12 @@ interface ImproveSkillsProps {
     skillList?: string[];
 }
 
-const ImproveSkills: FC<ImproveSkillsProps> = ({ skillList }) => {
+const ImproveSkills: FC<ImproveSkillsProps> = ({ skillList }): JSX.Element => {
     const skillImgSrc ='/img/gallery/img_10.jpg'
     return <div className="improve-skill">
         <section >
             <div className="col skill-img">
-                <Image imgSrc={process.env.PUBLIC_URL + skillImgSrc} pt={"100%"} title={"Photo by Unsplash"}/>
+                <Image imgSrc={process.env.PUBLIC_URL + skillImgSrc} title={"Photo by Unsplash"}/>
             </div>
             <div className="col skills">
                 <h1 className='title'>Improve Your Design skill</h1>
