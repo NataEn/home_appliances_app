@@ -4,6 +4,8 @@ import LanguageDetector  from "i18next-browser-languagedetector";
 import {resources} from "./internalization/index"
 import {detectionOptions as options} from "./internalization/langDetectionOptions"
 
+// TODO: load lang translations from json file from each component
+
   i18n
   .use(initReactI18next)
   .use(LanguageDetector)
