@@ -16,7 +16,7 @@ const Hero :FC=():JSX.Element=>{
         </div>
         <div className='col gallery'>
             {ImageList.map(((img, index)=>(
-            <Image imgSrc={process.env.PUBLIC_URL + img.src} title={img.name} key={img.name} index={index}/>
+            <Image imgSrc={process.env.PUBLIC_URL + img.src} title={img.alt} key={img.alt} index={index}/>
             )))}
         </div>
         </section>
