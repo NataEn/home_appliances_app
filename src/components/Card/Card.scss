@@ -1,1 +1,18 @@
-.card{}
+.card{
+    display: inline-flex;
+    height:120px;
+    width:150px;
+    .card-img{
+        display: inline-block;
+        height:120px;
+
+        img{
+            display: block;
+            height: 100%;
+            width:120px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+    }
+}

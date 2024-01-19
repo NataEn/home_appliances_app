@@ -12,9 +12,9 @@ const Designers: FC = (): JSX.Element => {
         <div className='designer-media'></div>
     </div>)
     return <div className='designers'>
-        <section>
+        <section className='top-designers-section'>
             <h1 className='title'>Our Top Designers</h1>
-            <div className='top-designers-cards'>
+            <div className='top-designers-cards'> 
                 {topDesigners.map(designer => <Card
                     uuid={designer.uuid}
                     image={designer.image}

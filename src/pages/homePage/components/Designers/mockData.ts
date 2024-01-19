@@ -16,7 +16,7 @@ export const topDesigners = [
         projects: 32,
         expertise: "Bohemian",
         image: {
-            src: "/img/top-designers/img_1.jpg", alt: "Photo by Unsplash"
+            src: "/img/top-designers/img_2.jpg", alt: "Photo by Unsplash"
         }
     },
     {
@@ -26,7 +26,7 @@ export const topDesigners = [
         projects: 32,
         expertise: "Minimalist",
         image: {
-            src: "/img/top-designers/img_1.jpg", alt: "Photo by Unsplash"
+            src: "/img/top-designers/img_3.jpg", alt: "Photo by Unsplash"
         }
     },
     {
@@ -36,7 +36,7 @@ export const topDesigners = [
         projects: 32,
         expertise: "Contemporary",
         image: {
-            src: "/img/top-designers/img_1.jpg", alt: "Photo by Unsplash"
+            src: "/img/top-designers/img_4.jpg", alt: "Photo by Unsplash"
         }
     },
     {
@@ -46,7 +46,7 @@ export const topDesigners = [
         projects: 32,
         expertise: "Industrial",
         image: {
-            src: "/img/top-designers/img_1.jpg", alt: "Photo by Unsplash"
+            src: "/img/top-designers/img_5.jpg", alt: "Photo by Unsplash"
         }
     },
     {
@@ -56,7 +56,7 @@ export const topDesigners = [
         projects: 32,
         expertise: "Traditional",
         image: {
-            src: "/img/top-designers/img_1.jpg", alt: "Photo by Unsplash"
+            src: "/img/top-designers/img_6.jpg", alt: "Photo by Unsplash"
         }
     }
 ]

@@ -1,11 +1,15 @@
-.chiefs{
-    .title{}
-    .top-chiefs-cards{
+.designers{
+    display: block;
+    .top-designers-section{
+        display: block;
+    }
+    .top-designers-cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-gap: 1.5em;
         .chief-projects-count, .chief-expertise{
             span{font-weight: bold;}
         }
-        .chief-media{}
-
     }
 
 }
