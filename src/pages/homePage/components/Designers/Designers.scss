@@ -7,8 +7,19 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         grid-gap: 1.5em;
+        
         .chief-projects-count, .chief-expertise{
-            span{font-weight: bold;}
+            font-size: 1.2em;
+            color: var(--text-light)
+            
+            span{
+                font-weight: bold;
+            }
+        }
+        .designer-icons{
+            svg{
+                padding-right: 1em;
+            }
         }
     }
 
