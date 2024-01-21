@@ -7,6 +7,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         grid-gap: 1.5em;
+        margin-top: 3em;
         
         .chief-projects-count, .chief-expertise{
             font-size: 1.2em;
@@ -17,8 +18,19 @@
             }
         }
         .designer-icons{
+            font-size: 1.2em;
             svg{
-                padding-right: 1em;
+                margin-right: 0.5em;
+                &:nth-child(1){
+                    color: var(--facebook-color);
+                }
+                &:nth-child(2){
+                    color: var(--tweeter-color);
+                }
+                &:nth-child(3){
+                    color: var(--instagram-color);
+                }
+
             }
         }
     }
