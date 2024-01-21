@@ -1,3 +1,32 @@
-.footer{
-    
+.footer {
+    background-color: var(--background-dark);
+    color: var(--text-white);
+    padding-block: 3em;
+
+    >div {
+        display: flex
+    }
+
+    .inner-section {
+        display: flex;
+        flex-direction: column;
+        margin-right: 2em;
+        width: 30%;
+        list-style-type: none;
+        line-height: 1.5;
+
+        h4 {
+            margin-bottom: .5em;
+        }
+    }
+
+    .copyright,
+    p {
+        opacity: .8;
+
+    }
+
+    .copyright {
+        margin-top: 1em;
+    }
 }
