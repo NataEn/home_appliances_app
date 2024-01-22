@@ -78,12 +78,15 @@ section {
 .main {
     display: block;
     padding-block: 3vw;
+    padding-top: 8vw;
+
 }
 
 @media screen and (max-width: 1050px) {
     .main {
         padding-block: 2vw;
         font-size: medium;
+        padding-top: 8vw;
 
         .container {
             padding-inline: 13vw;
@@ -95,6 +98,7 @@ section {
     .main {
         padding-block: 2vw;
         font-size: medium;
+        padding-top: 8vw;
 
         .container {
             padding-inline: 9vw;
@@ -127,6 +131,7 @@ section {
     .main {
         padding-block: 2vw;
         font-size: smaller;
+        padding-top: 8vw;
 
         .container {
             padding-inline: 6vw;
