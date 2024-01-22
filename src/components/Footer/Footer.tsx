@@ -22,9 +22,7 @@ const Footer: FC<FooterProps> = () => {
     }
 
     return <div className="footer container">
-        <div>
             {sections.map(section => innerSection(section))}
-        </div>
         <p className="copyright">&copy; 2024 | All Rights Reserved</p>
     </div>
 }
