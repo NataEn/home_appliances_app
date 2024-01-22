@@ -1,6 +1,7 @@
 import React, { FC, JSX } from "react";
 import { IconDefinition} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { Link, useLocation } from "react-router-dom";
 
 
 export interface NavlinkElement {
@@ -13,10 +14,11 @@ export interface NavlinkElement {
 
 
 const Navlink :FC<NavlinkElement> = ( {value, name, path, icon, className} : NavlinkElement): JSX.Element => {
-    return (<a href={path ?? "#!"} key={ name } className={`navlink ${className}`}>
+    const location = useLocation() 
+    return (<Link to={path ?? "#!"} key={ name } className={location.pathname === path?`navlink ${className} active`: `navlink ${className}`}>
         {icon && <FontAwesomeIcon icon={icon}/>}
         { value } 
-        </a>
+        </Link>
     )
 }
 
