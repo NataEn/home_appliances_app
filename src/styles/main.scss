@@ -71,7 +71,7 @@ section {
 }
 
 .container {
-    padding-inline: 12vw;
+    padding-inline: 16vw;
     display: block;
 }
 
@@ -80,7 +80,18 @@ section {
     padding-block: 3vw;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
+    .main {
+        padding-block: 2vw;
+        font-size: medium;
+
+        .container {
+            padding-inline: 13vw;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
     .main {
         padding-block: 2vw;
         font-size: medium;
@@ -110,6 +121,7 @@ section {
 
     }
 }
+
 
 @media screen and (max-width: 680px) {
     .main {
