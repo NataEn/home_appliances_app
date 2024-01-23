@@ -2,6 +2,7 @@ import React, { FC, JSX } from "react";
 import { IconDefinition} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { Link, useLocation } from "react-router-dom";
+import * as Utils from "../../Utils/mainUtils"
 
 
 export interface NavlinkElement {
@@ -15,7 +16,7 @@ export interface NavlinkElement {
 
 const Navlink :FC<NavlinkElement> = ( {value, name, path, icon, className} : NavlinkElement): JSX.Element => {
     const location = useLocation() 
-    return (<Link to={path ?? "#!"} key={ name } className={location.pathname === path?`navlink ${className} active`: `navlink ${className}`}>
+    return (<Link to={path ?? "#!"} key={ name } className={location.pathname === path? Utils.AddClassNames(["navlink", "active", className]) : Utils.AddClassNames(["navlink", className])}>
         {icon && <FontAwesomeIcon icon={icon}/>}
         { value } 
         </Link>
