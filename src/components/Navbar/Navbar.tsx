@@ -5,7 +5,7 @@ import Sidebar from "../Sidebar/Sidebar";
 import Navlink, { NavlinkElement} from "../Navlink/Navlink";
 import useWindowDimensions from '../../hooks/useWindowDimentions/useWindowDimantions'
 import Lang from "../../pages/settingsPage/components/lang"
-import {navlinks} from './const'
+import {navlinks} from './navlinks'
 
 const Navbar: FC = () => {
     const [showSideBar, setShowSideBar] = useState(false)

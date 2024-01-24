@@ -11,8 +11,9 @@ export function AddClassNames(classNames: AddClassNamesParam): string {
         // if any other type of var is given --> return empty string
         return ""
 }
-
-module.exports = {
+const Utils={
     AddClassNames,
 
 }
+
+export default Utils 
