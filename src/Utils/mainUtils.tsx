@@ -1,17 +1,13 @@
-export interface AddClassNamesParams {
-    classNames?: string | string[] | undefined[]
-}
-export function AddClassNames(classNames: AddClassNamesParams): string {
+export type AddClassNamesParam= string | (string | undefined)[]
+
+export function AddClassNames(classNames: AddClassNamesParam): string {
     if (!Array.isArray(classNames) && (typeof classNames === "string")) return classNames
     if (Array.isArray(classNames)) {
-        const names = classNames.map(className => {
-            if (!!className) {
-                return className
-            }
-            return "" // for a falsy item
-        })
-
-        if (names.length > 1) { return names.join(" ") } return ""
+        const names = classNames.filter(className => (typeof className === "string"))
+        if (names.length > 1) {
+            console.log("end", names.join(" ")) 
+            return names.join(" ")   
+        }
     }
     else{
         // if any other type of var is given --> return empty string
