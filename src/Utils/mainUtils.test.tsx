@@ -6,7 +6,7 @@ describe('AddClassNames function', () => {
         expect(mainUtils.AddClassNames(className)).toBe("")
     });
     
-    it('returns empty string for one class name', () => {
+    it('returns one class name for one class name', () => {
         const className : mainUtils.AddClassNamesParam="test"
         expect(mainUtils.AddClassNames(className)).toBe("test")
     });
