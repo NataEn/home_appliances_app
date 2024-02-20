@@ -6,7 +6,7 @@ export const topDesigners = [
         projects: 10,
         expertise: "Rustic",
         image: {
-            src: "/img/top-designers/img_1.jpg", alt: "Photo by Unsplash"
+            src: "/img/gallery/img_1.jpg", alt: "Photo by Unsplash"
         }
     },
     {
@@ -16,7 +16,7 @@ export const topDesigners = [
         projects: 5,
         expertise: "Bohemian",
         image: {
-            src: "/img/top-designers/img_2.jpg", alt: "Photo by Unsplash"
+            src: "/img/gallery/img_2.jpg", alt: "Photo by Unsplash"
         }
     },
     {

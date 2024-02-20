@@ -21,6 +21,18 @@
         flex-direction: column;
     }
 
+    &.infoDown,
+    &.infoUp {
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        .card-img,
+        .card-img img {
+            width: 100%;
+        }
+    }
+
     .card-img {
         display: inline-block;
         height: 120px;
