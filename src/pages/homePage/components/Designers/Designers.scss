@@ -1,33 +1,42 @@
-.designers{
+.designers {
     display: block;
-    .top-designers-section{
+
+    .top-designers-section {
         display: block;
+        height: fit-content;
+        margin-bottom: 1em;
     }
-    .top-designers-cards{
+
+    .top-designers-cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         grid-gap: 1.5em;
         margin-top: 3em;
-        
-        .chief-projects-count, .chief-expertise{
+
+        .chief-projects-count,
+        .chief-expertise {
             font-size: 1.2em;
-            color: var(--text-light)
-            
-            span{
+
+            color: var(--text-light) span {
                 font-weight: bold;
             }
         }
-        .designer-icons{
+
+        .designer-icons {
             font-size: 1.2em;
-            svg{
+
+            svg {
                 margin-right: 0.5em;
-                &:nth-child(1){
+
+                &:nth-child(1) {
                     color: var(--facebook-color);
                 }
-                &:nth-child(2){
+
+                &:nth-child(2) {
                     color: var(--tweeter-color);
                 }
-                &:nth-child(3){
+
+                &:nth-child(3) {
                     color: var(--instagram-color);
                 }
 

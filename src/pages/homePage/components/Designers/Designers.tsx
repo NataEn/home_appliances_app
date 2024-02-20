@@ -26,6 +26,7 @@ const Designers: FC = (): JSX.Element => {
                     image={designer.image}
                     title={cardTitle(designer.firstName, designer.lastName)}
                     description={cardDescription(designer.projects, designer.expertise)}
+                    className={undefined}
 
                 />)}
             </div>
