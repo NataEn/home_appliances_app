@@ -1,15 +1,37 @@
-:root{
-    --background-color:#fff ;
-    --background-light:#fff ;
-    --shadow-color:rgba(0, 0, 0, 0.2);
-    --overlay-color:rgba(0,0,0,0.2);
-    --background-shadow-color: rgba(0,0,0,0.05);
-    --primary-color:rgba(255,0,86);
-    --text-color:#0A0A0A;
-    --text-light:#575757;
+:root {
+
+    //colors
+    --background-color: #fff;
+    --background-light: #fff;
+    --background-dark: #000;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --overlay-color: rgba(0, 0, 0, 0.2);
+    --background-shadow-color: rgba(0, 0, 0, 0.05);
+    --primary-color: rgba(255, 0, 86);
+
+    //simple text
+    --text-color: #0A0A0A;
+    --text-light: #575757;
     --text-white: #fff;
-    --font-size:16px;
-    --font-size-btn:1.1em;
-    --animation-speed:1;
-    --border-radius: 3px;
+    --font-size: 16px;
+
+    // titles
+    --font-size-h2: 1.5em;
+    --font-wight-h2: 900;
+    --margin-bottom-h2: .5em;
+
+    // buttons
+    --font-size-btn: 1.1em;
+
+    // animations
+    --animation-speed: 1;
+
+    // borders 
+    --border-radius-small: 3px;
+    --border-radius-medium: 5px;
+
+    // socials
+    --facebook-color: #0063f7;
+    --tweeter-color: #13b4ff;
+    --instagram-color: #ff0056;
 }

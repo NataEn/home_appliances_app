@@ -1,0 +1,22 @@
+[
+    {
+        "title": "DesignHub.com",
+        "content": "DesignHub is a place where you can consectetur adipiscing elit. Sed elementum nisi sit amet varius fermentum."
+    },
+    {
+        "title": "Contact Us",
+        "content": [
+            "design@.hub.com",
+            "+18143511276",
+            "Smith 132, Kingston, New York 12401."
+        ]
+    },
+    {
+        "title": "Socials",
+        "content": [
+            "Facebook",
+            "Tweeter",
+            "Instagram"
+        ]
+    }
+]

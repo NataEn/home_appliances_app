@@ -5,19 +5,19 @@ export const navlinks: NavlinkElement[] = [
     {
         value: "Home",
         name: "home",
-        path: "#!",
+        path: "/",
         icon: faHome,
     },
     {
         value: "Designs",
         name: "designs",
-        path: "#!",
+        path: "/designs",
         icon: faList,
     },
     {
         value: "Settings",
         name: "settings",
-        path: "#!",
+        path: "/settings",
         icon: faCog,
     },
 ]

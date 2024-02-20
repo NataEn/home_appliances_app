@@ -1,9 +1,11 @@
 import React, { FC, useEffect, useRef, useState } from "react";
+import {Link} from "react-router-dom"
 import SidebarBtn from "../SidebarBtn/SidebarBtn"
 import Sidebar from "../Sidebar/Sidebar";
 import Navlink, { NavlinkElement} from "../Navlink/Navlink";
 import useWindowDimensions from '../../hooks/useWindowDimentions/useWindowDimantions'
-import {navlinks} from './const'
+import Lang from "../../pages/settingsPage/components/lang"
+import {navlinks} from './navlinks'
 
 const Navbar: FC = () => {
     const [showSideBar, setShowSideBar] = useState(false)
@@ -19,9 +21,10 @@ const Navbar: FC = () => {
     return (
         <>
             <div className="navbar container">
-                <a href="#!" className="logo"> Home Design Hub</a>
+                <Navlink path={"/"} value={"Home Design Hub"} key={"Home Design Hub"} className="logo" name={"logo"}/> 
                 <div className="nav-links">
                     {navlinks.map((link: NavlinkElement )=>< Navlink name={link.name} path={link.path} value={link.value} key={link.name}/>)}
+                    <Lang/>
                 </div>
                 <SidebarBtn showSideBar={showSideBar} setShowSideBar={setShowSideBar}/>
             </div>

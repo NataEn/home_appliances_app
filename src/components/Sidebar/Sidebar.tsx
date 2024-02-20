@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import Navlink, { NavlinkElement } from '../Navlink/Navlink'
-import { navlinks } from '../Navbar/const'
+import { navlinks } from '../Navbar/navlinks'
 
 const Sidebar: FC = () => {
         return (
