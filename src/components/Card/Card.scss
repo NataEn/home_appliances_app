@@ -24,7 +24,9 @@
     &.infoDown,
     &.infoUp {
         align-items: center;
-        height: 100%;
+        padding-bottom: 30%;
+        background-color: lightblue;
+        height: auto;
         width: 100%;
 
         .card-img,

@@ -4,7 +4,7 @@ export const Designs = [
         designerUuid: "02b89469-b0ab-46e4-ad25-3572ae13184c",
         title: "Rustic",
         image: {
-            src: "/img/top-designers/img_1.jpg", alt: "Photo by Unsplash"
+            src: "/img/gallery/img_1.jpg", alt: "Photo by Unsplash"
         }
     },
     {
@@ -12,7 +12,7 @@ export const Designs = [
         designerUuid: "fd84b276-4091-49f7-8a55-58feb8a35b28",
         title: "Bohemian",
         image: {
-            src: "/img/top-designers/img_2.jpg", alt: "Photo by Unsplash"
+            src: "/img/gallery/img_2.jpg", alt: "Photo by Unsplash"
         }
     },
     {
@@ -77,14 +77,6 @@ export const Designs = [
         title: "Traditional",
         image: {
             src: "/img/gallery/img_10.jpg", alt: "Photo by Unsplash"
-        }
-    },
-    {
-        uuid: "e1131eaf-bf3c-470a-b78f-b1df66b0f491",
-        designerUuid: "e1131eaf-bf3c-470a-b78f-b1df66b0f491",
-        title: "Traditional",
-        image: {
-            src: "/img/gallery/img_11.jpg", alt: "Photo by Unsplash"
         }
     }
 ]

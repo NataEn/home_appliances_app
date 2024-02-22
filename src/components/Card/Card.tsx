@@ -19,6 +19,7 @@ const Card: FC<CardProps> = ({ title, description, image, uuid, className, infoD
             default: return "infoRight"
         }
     }
+
     return (
         <div
             className={Utils.AddClassNames(["card", className, directionClass(infoDirection)])}
@@ -27,6 +28,7 @@ const Card: FC<CardProps> = ({ title, description, image, uuid, className, infoD
                 {image && <img src={image.src} alt={image.alt} />}
             </div>
             <div className="card-info">
+                {/* {`instance of : ${<div>sample</div> instanceof Element}`} */}
                 {title && <h3 className="card-info-title" >{title}</h3>}
                 <p className="card-info-text">{description}</p>
             </div>
