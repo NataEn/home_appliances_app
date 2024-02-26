@@ -11,12 +11,20 @@
             position: absolute;
             height: 3.5rem;
             width: 3.5rem;
-            margin-top: -3.5rem;
+            margin-top: -1.8rem;
             right: 70%;
             border: 2px solid var(--background-light);
             box-shadow: 0 1px 3px var(--shadow-color);
             border-radius: 50%;
             object-fit: cover;
+            z-index: 10;
+        }
+
+        .design-title {
+            margin-top: .3em;
+            font-size: 1.25em;
+            font-weight: bold;
+            margin-bottom: .5em;
         }
     }
 }
