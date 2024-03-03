@@ -1,0 +1,16 @@
+.setting-box {
+    margin-top: 1em;
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .options-container {
+        box-shadow: 0 5px 10px var(--shadow-color);
+        padding: 1em;
+        margin-top: 1em;
+        border-radius: var(--border-radius-medium);
+        border-left: .5em solid var(--primary-color);
+        background-color: var(--background-color);
+    }
+}
