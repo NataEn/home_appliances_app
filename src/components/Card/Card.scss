@@ -24,7 +24,7 @@
     &.infoDown,
     &.infoUp {
         align-items: center;
-        padding-bottom: 30%;
+        // padding-bottom: 30%;
         background-color: lightblue;
         height: auto;
         width: 100%;
@@ -60,8 +60,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-bottom: .5em;
+        padding-bottom: .75em;
         padding-left: 1em;
+        padding-right: 1em;
+        width: 100%;
 
         .card-info-title {
             font-size: 1.5em;
@@ -77,6 +79,16 @@
             justify-content: space-between;
         }
 
+    }
+
+    .card-link {
+        text-transform: capitalize;
+        position: relative;
+        margin-top: .5em;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: var(--primary-color);
+        bottom: 0;
     }
 }
 

@@ -66,7 +66,7 @@ export const Designs = [
         uuid: "e1131eaf-bf3c-470a-b78f-b1df66b0f491",
         designerUuid: "56a16d85-4a78-41e4-9ae0-8585f3d38e05",
         title: "Traditional",
-        description: "nibh enim commodo diam, eu consequat velit magna nec mi.",
+        description: "nibh enim commodo diam, eu consequat velit magna nec mi. Velit eleifend quis lorem in efficitur",
         image: {
             src: "/img/gallery/img_8.jpg", alt: "Photo by Unsplash"
         }

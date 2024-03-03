@@ -83,15 +83,22 @@ section {
 
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1470px) {
     .main {
         padding-block: 2vw;
         font-size: 0.8em;
+        padding-top: 6vw;
+    }
+
+    .container {
+        padding-inline: 13vw;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .main {
         padding-top: 8vw;
 
-        .container {
-            padding-inline: 13vw;
-        }
     }
 }
 

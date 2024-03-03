@@ -7,24 +7,41 @@
         position: relative;
         box-shadow: var(--shadow-color);
 
-        .author-img {
-            position: absolute;
-            height: 3.5rem;
-            width: 3.5rem;
-            margin-top: -1.8rem;
-            right: 70%;
-            border: 2px solid var(--background-light);
-            box-shadow: 0 1px 3px var(--shadow-color);
-            border-radius: 50%;
-            object-fit: cover;
-            z-index: 10;
+        .design-card-info {
+            .author-img {
+                position: absolute;
+                height: 3.5rem;
+                width: 3.5rem;
+                margin-top: -1.8rem;
+                right: 70%;
+                border: 2px solid var(--background-light);
+                box-shadow: 0 1px 3px var(--shadow-color);
+                border-radius: 50%;
+                object-fit: cover;
+                z-index: 10;
+            }
+
+            .design-title {
+                margin: 2em auto .5em auto;
+                font-size: 1.25em;
+                font-weight: bold;
+                color: var(--text-color);
+            }
+
+            .design-description {
+                color: var(--text-light);
+                font-size: .9em;
+                letter-spacing: 1px;
+                height: 3rem;
+            }
         }
 
-        .design-title {
-            margin-top: .3em;
-            font-size: 1.25em;
-            font-weight: bold;
-            margin-bottom: .5em;
-        }
+
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .main section.prev-searches {
+        height: fit-content;
     }
 }
