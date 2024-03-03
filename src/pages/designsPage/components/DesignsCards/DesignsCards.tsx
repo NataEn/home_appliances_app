@@ -30,6 +30,6 @@ export default function DesignsCards() {
         }
     }
     return <div className="designsCards-container">
-        {Designs.map((design: Design) => <Card description={designCardInfo(design.uuid, design.designerUuid,design.title, design.description)} uuid={design.uuid} image={design.image} link={designLinkInfo(design.uuid)} infoDirection={"down"} className="sample" />)}
+        {Designs.map((design: Design) => <Card description={designCardInfo(design.uuid, design.designerUuid,design.title, design.description)} uuid={design.uuid} image={design.image} link={designLinkInfo(design.uuid)} infoDirection={"down"}/>)}
     </div>
 }
