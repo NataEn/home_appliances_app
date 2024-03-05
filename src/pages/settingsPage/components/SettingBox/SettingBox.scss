@@ -6,11 +6,14 @@
     }
 
     .options-container {
+        display: flex;
         box-shadow: 0 5px 10px var(--shadow-color);
         padding: 1em;
         margin-top: 1em;
         border-radius: var(--border-radius-medium);
         border-left: .5em solid var(--primary-color);
         background-color: var(--background-color);
+        gap: 1em;
+
     }
 }

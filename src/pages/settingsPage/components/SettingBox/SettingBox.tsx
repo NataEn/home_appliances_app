@@ -1,24 +1,18 @@
 import React, { FC } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import Utils from "../../../../Utils/mainUtils";
+import SettingOption from "../SettingOption/SettingOption";
+import {StyleSetting, StyleSettingOption} from "../../Settings"
 
 export interface SettingBoxProps {
     title: string,
-    options: any[]
+    options: StyleSetting[],
+    className?: string
 }
 
-// const Option=(value:any, optionIndex:number):JSX.Element=>{
-//     return <div className="option" key={optionIndex}>{value}
-//     <div className="check"></div>
-//     </div>;
-// }
-
-const SettingBox: FC<SettingBoxProps> = ({ title, options }): JSX.Element => {
-    return <div className="setting-box">
+const SettingBox: FC<SettingBoxProps> = ({ title, options, className }): JSX.Element => {
+    return <div className={Utils.AddClassNames(["setting-box", className])}>
         <h2>{title}</h2>
-        <div className="options-container">{options.map((option, index) => <div className="option" key={index}>{option}
-            <div className="check"><FontAwesomeIcon icon={faCheck}/></div>
-        </div>)}</div>
+        <div className="options-container">{options.map((option: StyleSettingOption, index) => <SettingOption uuid={index} value={option.value} className={option.className}/>)}</div>
     </div>
 }
 

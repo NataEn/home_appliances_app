@@ -1,15 +1,24 @@
 import React, {FC} from "react";
 import SettingBox from "./components/SettingBox/SettingBox";
+import mockSettings from "./mockData.json"
+
+export interface StyleSetting{
+    uuid?:string,
+    name:string,
+    value: StyleSettingOption[],
+}
+
+export interface StyleSettingOption{
+    uuid: string | number,
+    value?: string | null,
+    className?: string | null
+}
 
 export default function Settings(){
-    const mockOptions=["1","2","3","4"]
+
     return <div className="settings">
         <div className="options-container">
-            <SettingBox title={"Preffered Theme"} options={mockOptions}/>
-            <SettingBox title={"Primary Color"} options={mockOptions}/>
-            <SettingBox title={"Font Size"} options={mockOptions}/>
-            <SettingBox title={"Animation Speed"} options={mockOptions}/>
-            <SettingBox title={"Language"} options={mockOptions}/>
+            {mockSettings.map((setting:StyleSetting)=><SettingBox key={setting?.uuid} title={setting.name} options={setting.value}/>)}
         </div>
     </div>
 }
