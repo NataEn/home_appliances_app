@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 import Image from "../../../../components/Image/Image"
-import {ImageList} from "./mockData"
+import ImageList from "./mockData.json"
 import { useTranslation } from 'react-i18next';
 
 const Hero :FC=():JSX.Element=>{
