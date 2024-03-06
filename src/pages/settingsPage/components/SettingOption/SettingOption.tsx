@@ -4,7 +4,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import Utils from "../../../../Utils/mainUtils";
 
 export interface SettingOptionProps {
-    uuid: string | number,
+    readonly uuid: string | number,
     value?: string | null,
     className?: string | null
 }

@@ -5,7 +5,7 @@ import Navlink, { NavlinkElement } from "../Navlink/Navlink";
 export interface CardProps {
     title?: string;
     description: string | JSX.Element;
-    uuid: string | number;
+    readonly uuid: string | number;
     image?: { src: string, alt: string, [key: string]: any }
     className?: string;
     infoDirection?: "right" | "left" | "up" | "down";

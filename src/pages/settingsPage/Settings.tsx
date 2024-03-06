@@ -3,13 +3,13 @@ import SettingBox from "./components/SettingBox/SettingBox";
 import mockSettings from "./mockData.json"
 
 export interface StyleSetting{
-    uuid?:string,
+    readonly uuid?:string,
     name:string,
     value: StyleSettingOption[],
 }
 
 export interface StyleSettingOption{
-    uuid: string | number,
+    readonly uuid: string | number,
     value?: string | null,
     className?: string | null
 }

@@ -5,8 +5,8 @@ import { topDesigners } from "../../../homePage/components/Designers/mockData";
 import * as topDesignerTypes from "../../../homePage/components/Designers/types"
 
 export interface Design{
-    uuid: string,
-    designerUuid: string,
+    readonly uuid: string,
+    readonly designerUuid: string,
     title: string,
     description: string,
     image: {src: string, alt: string}
