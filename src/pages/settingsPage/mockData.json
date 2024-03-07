@@ -1,7 +1,7 @@
 [
     {
         "uuid": 1,
-        "name": "theme options",
+        "name": "theme",
         "value": [
             {
                 "uuid": 1,
@@ -48,12 +48,7 @@
             {
                 "uuid": 3,
                 "value": "large",
-                "className": null
-            },
-            {
-                "uuid": 4,
-                "value": "fontSizeLarge",
-                "className": null
+                "className": "fontSizeLarge"
             }
         ]
     },
@@ -72,14 +67,9 @@
                 "className": "animationSpeedMedium"
             },
             {
-                "uuid": 3,
-                "value": "fast",
-                "className": null
-            },
-            {
                 "uuid": 4,
-                "value": "animationSpeedFast",
-                "className": null
+                "value": "fast",
+                "className": "animationSpeedFast"
             }
         ]
     },
@@ -90,22 +80,22 @@
             {
                 "uuid": 1,
                 "value": "en",
-                "className": null
+                "className": "en"
             },
             {
                 "uuid": 2,
                 "value": "fr",
-                "className": null
+                "className": "fr"
             },
             {
                 "uuid": 3,
                 "value": "heb",
-                "className": null
+                "className": "heb"
             },
             {
                 "uuid": 4,
                 "value": "spa",
-                "className": null
+                "className": "heb"
             }
         ]
     }
