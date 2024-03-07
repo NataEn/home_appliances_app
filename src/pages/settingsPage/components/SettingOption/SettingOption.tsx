@@ -5,16 +5,18 @@ import Utils from "../../../../Utils/mainUtils";
 
 export interface SettingOptionProps {
     readonly uuid: string | number,
+    selectedOption: string,
     value?: string | null | undefined,
-    className?: string | null | undefined
+    className: string,
+    onClickOption:(optionClassName:string)=>void
 }
 
 
-const SettingOption: FC<SettingOptionProps> = ({ uuid, value, className }): JSX.Element => {
+const SettingOption: FC<SettingOptionProps> = ({ uuid, value, className, selectedOption, onClickOption }): JSX.Element => {
 
-    return <div className={Utils.AddClassNames(["option", className])} key={uuid}>
+    return <div className={Utils.AddClassNames(["option", className])} key={uuid} onClick={(e: React.MouseEvent)=>onClickOption(className)}>
         {value&&<span className="option-value">{value}</span>}
-    <div className="check"><FontAwesomeIcon icon={faCheck}/></div>
+    {selectedOption===className && <div className="check"><FontAwesomeIcon icon={faCheck}/></div>}
 </div>
 }
 
