@@ -1,24 +1,28 @@
-import React, {FC} from "react";
+import React, { FC } from "react";
 import SettingBox from "./components/SettingBox/SettingBox";
-import mockSettings from "./mockData.json"
 
-export interface StyleSetting{
-    readonly uuid?:string,
-    name:string,
+export type StyleSetting = {
+    readonly uuid?: string | number,
+    name: string,
     value: StyleSettingOption[],
 }
 
-export interface StyleSettingOption{
+export type StyleSettingOption = {
     readonly uuid: string | number,
-    value?: string | null,
-    className?: string | null
+    value?: string | null | undefined,
+    className?: string | null | undefined
 }
+export interface SettingsOwnProps {
+settings:StyleSetting[]
+}
+export type SettingsProps = SettingsOwnProps
 
-export default function Settings(){
-
+const Settings: FC<SettingsProps> = ({settings}): JSX.Element => {
     return <div className="settings">
         <div className="options-container">
-            {mockSettings.map((setting:StyleSetting)=><SettingBox key={setting?.uuid} title={setting.name} options={setting.value}/>)}
+            {settings.map((setting: StyleSetting) => <SettingBox key={setting?.uuid} title={setting.name} options={setting.value} />)}
         </div>
     </div>
 }
+
+export default Settings;

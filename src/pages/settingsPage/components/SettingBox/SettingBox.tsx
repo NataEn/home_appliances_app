@@ -5,7 +5,7 @@ import {StyleSetting, StyleSettingOption} from "../../Settings"
 
 export interface SettingBoxProps {
     title: string,
-    options: StyleSetting[],
+    options: StyleSettingOption[],
     className?: string
 }
 

@@ -5,8 +5,8 @@ import Utils from "../../../../Utils/mainUtils";
 
 export interface SettingOptionProps {
     readonly uuid: string | number,
-    value?: string | null,
-    className?: string | null
+    value?: string | null | undefined,
+    className?: string | null | undefined
 }
 
 

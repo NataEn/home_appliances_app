@@ -1,4 +1,4 @@
-export type AddClassNamesParam = (string | undefined)[] | string
+export type AddClassNamesParam = (string | undefined | null)[] | string
 
 export function AddClassNames(classNames: AddClassNamesParam): string {
     if (!Array.isArray(classNames) && (typeof classNames === "string")) return classNames
