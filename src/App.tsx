@@ -10,6 +10,7 @@ import Home from './pages/homePage/Home/Home';
 import Settings from "./pages/settingsPage/Settings";
 import Designs from './pages/designsPage/Designs/Designs';
 import Footer from "./components/Footer/Footer"
+import mockSettings from "./pages/settingsPage/mockData.json"
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
         <div className='container main'>
           <Routes>
             <Route path="/" element={<Home />}/>
-            <Route path="/settings" element={<Settings />}/>
+            <Route path="/settings" element={<Settings settings={mockSettings}/>}/>
             <Route path="/designs" element={<Designs />}/>
           </Routes>
         </div>

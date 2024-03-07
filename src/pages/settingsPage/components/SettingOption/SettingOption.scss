@@ -1,0 +1,34 @@
+.option {
+    height: 3.5em;
+    width: 3.5em;
+    box-shadow: 0 3px 6px var(--shadow-color);
+    border-radius: var(--border-radius-medium);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.light {
+        background-color: var(--background-light);
+    }
+
+    &.dark {
+        background-color: var(--background-dark-2);
+    }
+
+    .check {
+        text-align: center;
+        height: 2.5em;
+        width: 2.5em;
+        background-color: var(--primary-color);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 2px 5px var(--shadow-color);
+
+        svg {
+            height: 1.5em;
+            width: 1.5em;
+        }
+    }
+}

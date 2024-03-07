@@ -1,15 +1,22 @@
 import React, { FC } from "react";
 import * as Utils from "../../Utils/mainUtils"
 import Image from "../Image/Image";
+import Navlink, { NavlinkElement } from "../Navlink/Navlink";
 export interface CardProps {
     title?: string;
     description: string | JSX.Element;
-    uuid: string | number;
+    readonly uuid: string | number;
     image?: { src: string, alt: string, [key: string]: any }
     className?: string;
     infoDirection?: "right" | "left" | "up" | "down";
+    link?:NavlinkElement | JSX.Element;
 }
-const Card: FC<CardProps> = ({ title, description, image, uuid, className, infoDirection = "right" }) => {
+
+function instanceOfNavlinkElement(object: any): object is NavlinkElement {
+    return true;
+}
+
+const Card: FC<CardProps> = ({ title, description, image, uuid, className, link, infoDirection = "right" }) => {
     const directionClass = (direction: String) => {
         switch (direction) {
             case "left": return "infoLeft"
@@ -19,6 +26,7 @@ const Card: FC<CardProps> = ({ title, description, image, uuid, className, infoD
             default: return "infoRight"
         }
     }
+
     return (
         <div
             className={Utils.AddClassNames(["card", className, directionClass(infoDirection)])}
@@ -29,6 +37,9 @@ const Card: FC<CardProps> = ({ title, description, image, uuid, className, infoD
             <div className="card-info">
                 {title && <h3 className="card-info-title" >{title}</h3>}
                 <p className="card-info-text">{description}</p>
+                {link && instanceOfNavlinkElement(link) && <Navlink className="card-link" value={link.value} path={link.path || "#!"} name={link.name}/>}
+                {!instanceOfNavlinkElement(link) && link}
+
             </div>
         </div>)
 }

@@ -1,4 +1,5 @@
-html {
+html,
+:root {
     height: 100vh;
 }
 
@@ -23,7 +24,7 @@ section {
     margin-bottom: 3vw;
     max-height: max-content;
     height: 27rem;
-    width: 100%;
+    width: 75vw;
 
     .col {
         width: 50%;
@@ -71,7 +72,7 @@ section {
 }
 
 .container {
-    padding-inline: 16vw;
+    padding-inline: 13.7vw;
     display: block;
 }
 
@@ -82,14 +83,30 @@ section {
 
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1470px) {
     .main {
         padding-block: 2vw;
-        font-size: medium;
+        font-size: 0.8em;
+        padding-top: 6vw;
+    }
+
+    .container {
+        padding-inline: 13vw;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .main {
         padding-top: 8vw;
 
-        .container {
-            padding-inline: 13vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main {
+        section {
+            width: 75vw;
+            height: 25rem;
         }
     }
 }
@@ -97,11 +114,10 @@ section {
 @media screen and (max-width: 768px) {
     .main {
         padding-block: 2vw;
-        font-size: medium;
         padding-top: 8vw;
 
         .container {
-            padding-inline: 9vw;
+            padding-inline: 10vw;
         }
 
         .designers {
@@ -112,10 +128,8 @@ section {
 
         section {
             height: 58em;
-            width: 100%;
             min-height: max-content;
             flex-direction: column;
-            overflow: visible;
 
             .col {
                 width: 100%;
@@ -134,14 +148,13 @@ section {
         padding-top: 8vw;
 
         .container {
-            padding-inline: 6vw;
+            padding-inline: 8vw;
         }
 
         section {
-            height: 58em;
-            min-height: max-content;
+            margin-top: 2em;
+            height: 48em;
             flex-direction: column;
-            overflow: visible;
 
             .col {
                 width: 100%;

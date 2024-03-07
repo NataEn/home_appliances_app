@@ -64,13 +64,32 @@
 @media screen and (max-width: 1000px) {
     .hero section {
         flex-direction: column-reverse;
+        height: 70rem;
 
+        .col {
+            width: 100%
+        }
+
+        .col .info {
+            height: fit-content;
+            height: -moz-fit-content;
+        }
+
+        .col .gallery {
+            height: 100%;
+            // width: 100%;
+            max-height: 80vh;
+        }
     }
 }
 
 @media screen and (max-width: 680px) {
     .hero section {
-        flex-direction: column-reverse;
+        height: 40rem;
+
+        .col {
+            height: fit-content;
+        }
 
     }
 }

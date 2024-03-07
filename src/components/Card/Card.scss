@@ -24,12 +24,19 @@
     &.infoDown,
     &.infoUp {
         align-items: center;
-        height: 100%;
+        // padding-bottom: 30%;
+        background-color: lightblue;
+        height: auto;
         width: 100%;
+
+        .card-info-title {
+            margin-top: .3em;
+        }
 
         .card-img,
         .card-img img {
             width: 100%;
+            height: 180px;
         }
     }
 
@@ -53,8 +60,10 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-bottom: .5em;
+        padding-bottom: .75em;
         padding-left: 1em;
+        padding-right: 1em;
+        width: 100%;
 
         .card-info-title {
             font-size: 1.5em;
@@ -70,6 +79,16 @@
             justify-content: space-between;
         }
 
+    }
+
+    .card-link {
+        text-transform: capitalize;
+        position: relative;
+        margin-top: .5em;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: var(--primary-color);
+        bottom: 0;
     }
 }
 

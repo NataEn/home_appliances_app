@@ -1,0 +1,112 @@
+[
+    {
+        "uuid": 1,
+        "name": "theme options",
+        "value": [
+            {
+                "uuid": 1,
+                "value": null,
+                "className": "light"
+            },
+            {
+                "uuid": 2,
+                "value": null,
+                "className": "dark"
+            }
+        ]
+    },
+    {
+        "uuid": 2,
+        "name": "primary color",
+        "value": [
+            {
+                "uuid": 1,
+                "value": null,
+                "className": "primaryColorlight"
+            },
+            {
+                "uuid": 2,
+                "value": null,
+                "className": "primaryColordark"
+            }
+        ]
+    },
+    {
+        "uuid": 3,
+        "name": "font size",
+        "value": [
+            {
+                "uuid": 1,
+                "value": "small",
+                "className": "fontSizeSmall"
+            },
+            {
+                "uuid": 2,
+                "value": "medium",
+                "className": "fontSizeMedium"
+            },
+            {
+                "uuid": 3,
+                "value": "large",
+                "className": null
+            },
+            {
+                "uuid": 4,
+                "value": "fontSizeLarge",
+                "className": null
+            }
+        ]
+    },
+    {
+        "uuid": 4,
+        "name": "animation speed",
+        "value": [
+            {
+                "uuid": 1,
+                "value": "slow",
+                "className": "animationSpeedSlow"
+            },
+            {
+                "uuid": 2,
+                "value": "medium",
+                "className": "animationSpeedMedium"
+            },
+            {
+                "uuid": 3,
+                "value": "fast",
+                "className": null
+            },
+            {
+                "uuid": 4,
+                "value": "animationSpeedFast",
+                "className": null
+            }
+        ]
+    },
+    {
+        "uuid": 5,
+        "name": "language",
+        "value": [
+            {
+                "uuid": 1,
+                "value": "en",
+                "className": null
+            },
+            {
+                "uuid": 2,
+                "value": "fr",
+                "className": null
+            },
+            {
+                "uuid": 3,
+                "value": "heb",
+                "className": null
+            },
+            {
+                "uuid": 4,
+                "value": "spa",
+                "className": null
+            }
+        ]
+    }
+]

@@ -6,6 +6,5 @@ export default function Designs(){
     return <div className="designs">
         <PrevSearches/>
         <DesignsCards/>
-        
-        Designs</div>
+        </div>
 }
