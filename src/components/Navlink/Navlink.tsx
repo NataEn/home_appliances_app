@@ -16,7 +16,7 @@ export interface NavlinkElement {
 
 const Navlink :FC<NavlinkElement> = ( {value, name, path, icon, className} : NavlinkElement): JSX.Element => {
     const location = useLocation() 
-    return (<Link to={path ?? "#!"} key={ name } className={location.pathname === path? Utils.AddClassNames(["navlink", "active", className]) : Utils.AddClassNames(["navlink", className])}>
+    return (<Link to={path ?? "#!"} key={ name } className={location.pathname === path? Utils.addClassNames(["navlink", "active", className]) : Utils.addClassNames(["navlink", className])}>
         {icon && <FontAwesomeIcon icon={icon}/>}
         { value } 
         </Link>

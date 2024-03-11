@@ -1,6 +1,6 @@
 export type AddClassNamesParam = (string | undefined | null)[] | string
 
-export function AddClassNames(classNames: AddClassNamesParam): string {
+export function addClassNames(classNames: AddClassNamesParam): string {
     if (!Array.isArray(classNames) && (typeof classNames === "string")) return classNames
     if (Array.isArray(classNames)) {      
         const names = classNames.filter(className => (typeof className === "string"))
@@ -12,7 +12,7 @@ export function AddClassNames(classNames: AddClassNamesParam): string {
     return ""
 }
 const Utils = {
-    AddClassNames,
+    addClassNames,
 
 }
 

@@ -28,7 +28,7 @@ const SettingBox: FC<SettingBoxProps> = ({ key, title, options, className }): JS
         updateSettingsContext(title, value)
     }
 
-    return <div className={Utils.AddClassNames(["setting-box", className])} key={key}>
+    return <div className={Utils.addClassNames(["setting-box", className])} key={key}>
         <h2>{title}</h2>
         <div className="options-container">{options.map((option: StyleSettingOption) => <SettingOption onClickOption={onClickSettingOption} selectedOption={settingOption} uuid={option.uuid} value={option.value} className={option.className} title={title} />)}</div>
     </div>

@@ -13,7 +13,7 @@
     .logo {
         font-size: 1.5em;
         font-weight: bolder;
-        color: var(--primary-color-pink);
+        color: var(--primary-color);
         text-shadow: 0 1px 3px var(--shadow-color);
 
         .logo-ome {
@@ -39,7 +39,7 @@
                 display: inline-block;
                 height: 3px;
                 width: 100%;
-                background-color: var(--primary-color-pink);
+                background-color: var(--primary-color);
                 position: absolute;
                 bottom: -5px;
                 left: 0;
@@ -54,7 +54,7 @@
             }
 
             &.active {
-                color: var(--primary-color-pink);
+                color: var(--primary-color);
                 font-weight: bold;
             }
         }

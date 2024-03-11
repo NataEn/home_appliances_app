@@ -14,7 +14,7 @@ export interface SettingOptionProps {
 // const styleClassName = (value: string, className: string): string => value ? "btn" : `${className} regular`;
 
 const SettingOption: FC<SettingOptionProps> = ({ uuid, value, className, title, selectedOption, onClickOption }): JSX.Element => {
-    return <div className={Utils.AddClassNames(["option", "btn", className])} key={uuid} onClick={(e: React.MouseEvent)=>onClickOption(className, value, title)}>
+    return <div className={Utils.addClassNames(["option", "btn", className])} key={uuid} onClick={(e: React.MouseEvent)=>onClickOption(className, value, title)}>
         {value&&<span className="option-value">{value}</span>}
     {selectedOption===className && <div className="check"><FontAwesomeIcon icon={faCheck}/></div>}
 </div>

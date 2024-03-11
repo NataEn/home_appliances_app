@@ -29,7 +29,7 @@ const Card: FC<CardProps> = ({ title, description, image, uuid, className, link,
 
     return (
         <div
-            className={Utils.AddClassNames(["card", className, directionClass(infoDirection)])}
+            className={Utils.addClassNames(["card", className, directionClass(infoDirection)])}
             key={uuid}>
             <div className="card-img">
                 {image && <img src={image.src} alt={image.alt} />}

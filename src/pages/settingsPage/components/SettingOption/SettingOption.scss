@@ -28,7 +28,7 @@
     }
 
     &.primaryColorPink {
-        background-color: var(--primary-color-pink);
+        background-color: var(--primary-color);
     }
 
     &.primaryColorBlue {
@@ -63,7 +63,7 @@
         text-align: center;
         height: 2.5em;
         width: 2.5em;
-        background-color: var(--primary-color-pink);
+        background-color: var(--primary-color);
         border-radius: 50%;
         display: flex;
         justify-content: center;

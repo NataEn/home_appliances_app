@@ -28,11 +28,11 @@
 
 
             &.active {
-                border-left-color: var(--primary-color-pink);
+                border-left-color: var(--primary-color);
             }
 
             &:hover {
-                border-left-color: var(--primary-color-pink);
+                border-left-color: var(--primary-color);
                 background-color: var(--background-shadow-color);
             }
 
