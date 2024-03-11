@@ -18,10 +18,12 @@ const Navbar: FC = () => {
         }
     },[width, showSideBar])
 
+    const Logo=<span>H<span className="logo-ome">ome</span>DesignHub</span>
+
     return (
         <>
             <div className="navbar container">
-                <Navlink path={"/"} value={"Home Design Hub"} key={"Home Design Hub"} className="logo" name={"logo"}/> 
+                <Navlink path={"/"} value={Logo} key={"home_design_hub_link"} className="logo" name={"logo"}/> 
                 <div className="nav-links">
                     {navlinks.map((link: NavlinkElement )=>< Navlink name={link.name} path={link.path} value={link.value} key={link.name}/>)}
                     <Lang/>

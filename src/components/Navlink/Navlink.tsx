@@ -6,7 +6,7 @@ import * as Utils from "../../Utils/mainUtils"
 
 
 export interface NavlinkElement {
-    value: string;
+    value: string | JSX.Element;
     name: string;
     path?: string;
     icon?: IconDefinition;
