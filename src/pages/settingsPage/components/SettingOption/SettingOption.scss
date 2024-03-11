@@ -1,11 +1,30 @@
 .option {
-    height: 3.5em;
-    width: 3.5em;
-    box-shadow: 0 3px 6px var(--shadow-color);
-    border-radius: var(--border-radius-medium);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: max-content;
+
+    &.regular {
+        height: 3.5em;
+        width: 3.5em;
+        box-shadow: 0 3px 6px var(--shadow-color);
+        border-radius: var(--border-radius-medium);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &.btn {
+        display: inline-flex;
+        align-items: center;
+        gap: .5em;
+        width: fit-content;
+
+        .check {
+            height: auto;
+            width: auto;
+            box-shadow: none;
+        }
+
+    }
 
     &.light {
         background-color: var(--background-light);
@@ -15,11 +34,43 @@
         background-color: var(--background-dark-2);
     }
 
+    &.primaryColorPink {
+        background-color: var(--primary-color-pink);
+    }
+
+    &.primaryColorBlue {
+        background-color: var(--primary-color-blue);
+    }
+
+    &.primaryColorOrange {
+        background-color: var(--primary-color-orange);
+    }
+
+    &.primaryColorGreen {
+        background-color: var(--primary-color-green);
+    }
+
+    &.primaryColorPurple {
+        background-color: var(--primary-color-purple);
+    }
+
+    &.fontSizeSmall {
+        font-size: var(--font-size-small);
+    }
+
+    &.fontSizeMedium {
+        font-size: var(--font-size-medium);
+    }
+
+    &.fontSizeLarge {
+        font-size: var(--font-size-large);
+    }
+
     .check {
         text-align: center;
         height: 2.5em;
         width: 2.5em;
-        background-color: var(--primary-color);
+        background-color: var(--primary-color-pink);
         border-radius: 50%;
         display: flex;
         justify-content: center;

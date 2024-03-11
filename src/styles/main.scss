@@ -10,7 +10,7 @@ html,
 }
 
 body {
-    font-size: var(--font-size);
+    font-size: var(--font-size-medium);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -49,7 +49,7 @@ section {
 .btn {
     border: none;
     outline: none;
-    background-color: var(--primary-color);
+    background-color: var(--primary-color-pink);
     color: var(--text-white);
     padding: .75em 1em;
     text-transform: uppercase;

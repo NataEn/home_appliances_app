@@ -22,12 +22,27 @@
             {
                 "uuid": 1,
                 "value": null,
-                "className": "primaryColorlight"
+                "className": "primaryColorPink"
             },
             {
                 "uuid": 2,
                 "value": null,
-                "className": "primaryColordark"
+                "className": "primaryColorBlue"
+            },
+            {
+                "uuid": 3,
+                "value": null,
+                "className": "primaryColorOrange"
+            },
+            {
+                "uuid": 4,
+                "value": null,
+                "className": "primaryColorGreen"
+            },
+            {
+                "uuid": 5,
+                "value": null,
+                "className": "primaryColorPurple"
             }
         ]
     },
@@ -95,7 +110,7 @@
             {
                 "uuid": 4,
                 "value": "spa",
-                "className": "heb"
+                "className": "spa"
             }
         ]
     }

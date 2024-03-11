@@ -3,7 +3,7 @@
         .col {
             .skill-item {
                 list-style-type: none;
-                border-left: .2em solid var(--primary-color);
+                border-left: .2em solid var(--primary-color-pink);
                 margin-bottom: .5em;
                 padding: .1em 0 .1em .5em;
                 color: var(--text-light);
@@ -12,23 +12,25 @@
                 transform: translateX(100%);
                 opacity: 0;
                 animation: getAnimationDuration(.3s) slideInRight forwards;
-                @for $i from 1 to 7{
-                    &:nth-child(#{$i}){
+
+                @for $i from 1 to 7 {
+                    &:nth-child(#{$i}) {
                         animation-delay: #{$i*.1}s;
                     }
                 }
             }
-            &.skills{
-                h1{
+
+            &.skills {
+                h1 {
                     position: relative;
-                    top:0;
+                    top: 0;
                 }
             }
         }
 
         .btn {
             margin-top: .75em;
-            width:max-content;
+            width: max-content;
         }
     }
 }

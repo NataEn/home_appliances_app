@@ -14,9 +14,9 @@ const SettingBox: FC<SettingBoxProps> = ({ key, title, options, className }): JS
     const [settingType, setSettingType] = useState(title)
     const [settingOption, setSettingOption] = useState(options[0].className)
 
-    const onClickSettingOption = (className:string):void => {
-        console.log(className)
-        //setSettingOption() 
+    const onClickSettingOption = (className: string): void => {
+        console.log("from setting box", className)
+        setSettingOption(className)
     }
 
     return <div className={Utils.AddClassNames(["setting-box", className])} key={key}>

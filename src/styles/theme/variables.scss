@@ -8,13 +8,19 @@
     --shadow-color: rgba(0, 0, 0, 0.2);
     --overlay-color: rgba(0, 0, 0, 0.2);
     --background-shadow-color: rgba(0, 0, 0, 0.05);
-    --primary-color: rgba(255, 0, 86);
+    --primary-color-pink: rgba(255, 0, 86);
+    --primary-color-blue: rgba(33, 150, 233);
+    --primary-color-orange: rgba(255, 193, 7);
+    --primary-color-green: rgba(0, 200, 83);
+    --primary-color-purple: rgba(156, 39, 176);
 
     //simple text
     --text-color: #0A0A0A;
     --text-light: #575757;
     --text-white: #fff;
-    --font-size: 16px;
+    --font-size-small: 12px;
+    --font-size-medium: 16px;
+    --font-size-large: 20px;
 
     // titles
     --font-size-h2: 1.5em;
