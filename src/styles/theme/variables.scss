@@ -1,5 +1,7 @@
 :root {
-    //colors
+    // initial settings
+
+
     --background-color: #fff;
     --background-light: #fff;
     --background-dark: #000;
@@ -10,6 +12,15 @@
 
     --primary-color: rgba(255, 0, 86);
 
+    --text-color: #0A0A0A;
+    --text-light: #575757;
+    --text-white: #fff;
+    --font-size: 16px;
+
+    --animation-speed: 1;
+
+
+    //colors
     --primary-color-pink: rgba(255, 0, 86);
     --primary-color-blue: rgba(33, 150, 233);
     --primary-color-orange: rgba(255, 193, 7);
@@ -24,10 +35,6 @@
 
 
     //simple text
-    --text-color: #0A0A0A;
-    --text-light: #575757;
-    --text-white: #fff;
-    --font-size: 16px;
     --font-size-small: 12px;
     --font-size-medium: 16px;
     --font-size-large: 20px;
@@ -41,7 +48,7 @@
     --font-size-btn: 1.1em;
 
     // animations
-    --animation-speed: 1;
+    --animation-speed-medium: 1;
 
     // borders 
     --border-radius-small: 3px;
