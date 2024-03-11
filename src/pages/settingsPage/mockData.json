@@ -5,50 +5,50 @@
         "value": [
             {
                 "uuid": 1,
-                "value": null,
+                "value": "light",
                 "className": "light"
             },
             {
                 "uuid": 2,
-                "value": null,
+                "value": "dark",
                 "className": "dark"
             }
         ]
     },
     {
         "uuid": 2,
-        "name": "primary color",
+        "name": "primaryColor",
         "value": [
             {
                 "uuid": 1,
-                "value": null,
+                "value": "pink",
                 "className": "primaryColorPink"
             },
             {
                 "uuid": 2,
-                "value": null,
+                "value": "blue",
                 "className": "primaryColorBlue"
             },
             {
                 "uuid": 3,
-                "value": null,
+                "value": "orange",
                 "className": "primaryColorOrange"
             },
             {
                 "uuid": 4,
-                "value": null,
+                "value": "green",
                 "className": "primaryColorGreen"
             },
             {
                 "uuid": 5,
-                "value": null,
+                "value": "purple",
                 "className": "primaryColorPurple"
             }
         ]
     },
     {
         "uuid": 3,
-        "name": "font size",
+        "name": "fontSize",
         "value": [
             {
                 "uuid": 1,
@@ -69,7 +69,7 @@
     },
     {
         "uuid": 4,
-        "name": "animation speed",
+        "name": "animationSpeed",
         "value": [
             {
                 "uuid": 1,

@@ -9,7 +9,7 @@ export type StyleSetting = {
 
 export type StyleSettingOption = {
     readonly uuid: string | number,
-    value?: string | null | undefined,
+    value: string,
     className: string
 }
 export interface SettingsOwnProps {

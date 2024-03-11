@@ -1,5 +1,6 @@
 
-import React from 'react';
+import React, {useState} from 'react';
+import {SettingsContext, initialSettings} from "./Contexts"
 import {
   BrowserRouter as Router,
   Routes,
@@ -12,11 +13,15 @@ import Designs from './pages/designsPage/Designs/Designs';
 import Footer from "./components/Footer/Footer"
 import mockSettings from "./pages/settingsPage/mockData.json"
 
-
 function App() {
+  const [settings,setSettings]=useState(initialSettings)
+
   return (
+    
     <Router>
-      <div className="App">
+      <SettingsContext.Provider value={{settings, setSettings}}>
+      {/* <AuthContext.Provider value={currentUser}> */}
+      <div className="App dark">
         <Navbar />
         <div className='container main'>
           <Routes>
@@ -27,7 +32,8 @@ function App() {
         </div>
         <Footer />
       </div>
-
+      {/* </AuthContext.Provider> */}
+      </SettingsContext.Provider>
     </Router>
   );
 }

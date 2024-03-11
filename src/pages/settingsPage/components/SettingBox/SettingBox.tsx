@@ -1,7 +1,8 @@
-import React, { FC, useState } from "react";
+import React, { FC, useContext, useState } from "react";
 import Utils from "../../../../Utils/mainUtils";
 import SettingOption from "../SettingOption/SettingOption";
 import { StyleSettingOption } from "../../Settings"
+import { SettingsContext } from "../../../../Contexts";
 
 export interface SettingBoxProps {
     key: string | number,
@@ -14,9 +15,16 @@ const SettingBox: FC<SettingBoxProps> = ({ key, title, options, className }): JS
     const [settingType, setSettingType] = useState(title)
     const [settingOption, setSettingOption] = useState(options[0].className)
 
-    const onClickSettingOption = (className: string): void => {
+    const { settings, setSettings } = useContext(SettingsContext);
+
+    const updateSettingsContext=(title: string, value: string)=>{
+          const newSettings={...settings, [title]:value}
+          setSettings({...newSettings})
+    }
+    const onClickSettingOption = (className: string, value: string): void => {
         console.log("from setting box", className)
         setSettingOption(className)
+        updateSettingsContext(className, value)
     }
 
     return <div className={Utils.AddClassNames(["setting-box", className])} key={key}>
