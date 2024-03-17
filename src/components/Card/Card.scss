@@ -3,6 +3,7 @@
     height: 120px;
     background-color: var(--background-color);
     border-radius: var(--border-radius-medium);
+    box-shadow: 0 3px 6px var(--shadow-color);
     overflow: hidden;
 
     &.infoRight {
@@ -24,8 +25,7 @@
     &.infoDown,
     &.infoUp {
         align-items: center;
-        // padding-bottom: 30%;
-        background-color: lightblue;
+        background-color: var(--background-light);
         height: auto;
         width: 100%;
 
@@ -60,10 +60,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-bottom: .75em;
-        padding-left: 1em;
-        padding-right: 1em;
+        padding: .75em 1em .75em 1em;
+        // padding-bottom: .75em;
+        // padding-left: 1em;
+        // padding-right: 1em;
+        // padding-top: .75em;
         width: 100%;
+        box-shadow: 0 3px 6px var(--shadow-color);
+
 
         .card-info-title {
             font-size: 1.5em;
@@ -77,6 +81,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            color: var(--text-light);
         }
 
     }

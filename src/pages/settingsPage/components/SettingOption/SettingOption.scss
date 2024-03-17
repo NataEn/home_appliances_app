@@ -1,5 +1,6 @@
 .option {
     width: max-content;
+    color: var(--text-color);
 
     &.regular {
         height: 3.5em;
@@ -20,11 +21,13 @@
     }
 
     &.light {
-        background-color: var(--background-light);
+        background-color: #fff;
+        color: rgba(29, 29, 29);
     }
 
     &.dark {
         background-color: var(--background-dark-2);
+        color: #fff;
     }
 
     &.primaryColorPink {

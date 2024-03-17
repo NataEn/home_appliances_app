@@ -72,6 +72,7 @@ section {
 }
 
 .container {
+    background-color: var(--background-lighter);
     padding-inline: 13.7vw;
     display: block;
 }
@@ -80,6 +81,7 @@ section {
     display: block;
     padding-block: 3vw;
     padding-top: 8vw;
+    background-color: var(--background-lighter);
 
 }
 

@@ -11,10 +11,10 @@ export type SettingsContextType = {
     setSettings: (settings: Settings) => void
 }
 export const initialSettings = {
-    theme: 'light',
-    primaryColor: 'pink',
-    fontSize: 'medium',
-    animationSpeed: "medium"
+    theme: 'theme-light',
+    primaryColor: 'primaryColor-pink',
+    fontSize: 'fontSize-medium',
+    animationSpeed: "animationSpeed-medium"
 }
 
 export const SettingsContext = createContext<SettingsContextType>({ settings: initialSettings, setSettings: () => { } })
