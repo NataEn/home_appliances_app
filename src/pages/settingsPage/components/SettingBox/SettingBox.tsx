@@ -17,14 +17,13 @@ const SettingBox: FC<SettingBoxProps> = ({ key, title, options, className }): JS
 
     const { settings, setSettings } = useContext(SettingsContext);
 
-    const updateSettingsContext=(title: string, value: string)=>{
+    const updateSettingsContext=(title: string, value: string)=>{   
           const newSettings={...settings, [title]:value}
           console.log(`updating to ${title}:${value}`)
           setSettings({...newSettings})
     }
     const onClickSettingOption = (className: string, value: string, title: string): void => {
         console.log("from setting box", className)
-        setSettingOption(className)
         updateSettingsContext(title, value)
     }
 
@@ -32,7 +31,9 @@ const SettingBox: FC<SettingBoxProps> = ({ key, title, options, className }): JS
 
     return <div className={Utils.addClassNames(["setting-box", className])} key={key}>
         <h2>{Utils.CreateTitle(title)}</h2>
-        <div className="options-container">{options.map((option: StyleSettingOption) => <SettingOption onClickOption={onClickSettingOption} selectedOption={settingOption} uuid={option.uuid} value={option.value} className={option.className} title={title} />)}</div>
+        <div className="options-container">{options.map((option: StyleSettingOption) => 
+        <SettingOption onClickOption={onClickSettingOption} uuid={option.uuid} value={option.value} className={option.className} title={title} />)}
+        </div>
     </div>
 }
 

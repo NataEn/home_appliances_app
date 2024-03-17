@@ -78,8 +78,8 @@
             },
             {
                 "uuid": 2,
-                "value": "medium",
-                "className": "animationSpeedMedium"
+                "value": "moderate",
+                "className": "animationSpeedModerate"
             },
             {
                 "uuid": 4,

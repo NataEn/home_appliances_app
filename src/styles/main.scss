@@ -1,6 +1,8 @@
 html,
 :root {
     height: 100vh;
+    font-size: var(--font-size);
+    ;
 }
 
 * {
@@ -10,7 +12,7 @@ html,
 }
 
 body {
-    font-size: var(--font-size-medium);
+    font-size: var(--font-size);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -146,7 +148,7 @@ section {
 @media screen and (max-width: 680px) {
     .main {
         padding-block: 2vw;
-        font-size: smaller;
+        font-size: 0.5em;
         padding-top: 8vw;
 
         .container {
