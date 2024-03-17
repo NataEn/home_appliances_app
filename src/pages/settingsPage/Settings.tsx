@@ -18,7 +18,6 @@ settings:StyleSetting[],
 export type SettingsProps = SettingsOwnProps
 
 const Settings: FC<SettingsProps> = ({settings}): JSX.Element => {
-    const [theme, setTheme] = useState("light")
 
     return <div className="settings">
         <div className="options-container">
