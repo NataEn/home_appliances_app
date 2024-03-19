@@ -20,7 +20,7 @@ const Designers: FC = (): JSX.Element => {
     </>)
     return <div className='designers'>
         <section className='top-designers-section'>
-            <h1 className='title'>Our Top Designers</h1>
+            <h1 className='title'>{t("topDesigners")}</h1>
             <div className='top-designers-cards'>
                 {topDesigners.map((designer: designerTypes.TopDesigner )=> <Card
                     uuid={designer.uuid}
