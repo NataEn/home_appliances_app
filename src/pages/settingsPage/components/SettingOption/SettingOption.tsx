@@ -4,7 +4,6 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import Utils from "../../../../Utils/mainUtils";
 import { SettingsContext } from "../../../../Contexts";
 
-
 export interface SettingOptionProps {
     readonly uuid: string | number,
     // selectedOption: string,

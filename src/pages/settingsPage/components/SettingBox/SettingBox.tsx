@@ -1,9 +1,13 @@
-import React, { FC, useContext, useState } from "react";
+import React, { FC, useContext, useState, useEffect } from "react";
 import Utils from "../../../../Utils/mainUtils";
 import SettingOption from "../SettingOption/SettingOption";
 import { StyleSettingOption } from "../../Settings"
 import { SettingsContext } from "../../../../Contexts";
+import { useTranslation, Trans } from 'react-i18next';
+import { resources } from "../../../../internalization";
 
+
+const Languages=Object.keys(resources)
 export interface SettingBoxProps {
     key: string | number,
     title: string,
@@ -16,14 +20,16 @@ const SettingBox: FC<SettingBoxProps> = ({ key, title, options, className }): JS
     const [settingOption, setSettingOption] = useState(options[0].className)
 
     const { settings, setSettings } = useContext(SettingsContext);
+    const {i18n} = useTranslation()
 
     const updateSettingsContext=(title: string, value: string)=>{   
           const newSettings={...settings, [title]:value}
-          console.log(`updating to ${title}:${value}`)
+          if(Languages.includes(value)){
+            i18n.changeLanguage(value)
+          }
           setSettings({...newSettings})
     }
     const onClickSettingOption = (className: string, value: string, title: string): void => {
-        console.log("from setting box", className)
         updateSettingsContext(title, value)
     }
 
@@ -32,7 +38,8 @@ const SettingBox: FC<SettingBoxProps> = ({ key, title, options, className }): JS
     return <div className={Utils.addClassNames(["setting-box", className])} key={key}>
         <h2>{Utils.CreateTitle(title)}</h2>
         <div className="options-container">{options.map((option: StyleSettingOption) => 
-        <SettingOption onClickOption={onClickSettingOption} uuid={option.uuid} value={option.value} className={option.className} title={title} />)}
+        <SettingOption
+         onClickOption={onClickSettingOption} uuid={option.uuid} value={option.value} className={option.className} title={title} />)}
         </div>
     </div>
 }
