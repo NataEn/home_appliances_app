@@ -4,7 +4,7 @@ import SidebarBtn from "../SidebarBtn/SidebarBtn"
 import Sidebar from "../Sidebar/Sidebar";
 import Navlink, { NavlinkElement} from "../Navlink/Navlink";
 import useWindowDimensions from '../../hooks/useWindowDimensions/useWindowDimansions'
-import Lang from "../../pages/settingsPage/components/lang"
+import Lang from "../Lang/Lang"
 import {navlinks} from './navlinks'
 
 const Navbar: FC = () => {
@@ -27,6 +27,7 @@ const Navbar: FC = () => {
                 <div className="nav-links">
                     {navlinks.map((link: NavlinkElement )=>< Navlink name={link.name} path={link.path} value={link.value} key={link.name}/>)}
                 </div>
+                <Lang></Lang>
                 <SidebarBtn showSideBar={showSideBar} setShowSideBar={setShowSideBar}/>
             </div>
             {showSideBar && <Sidebar />}
